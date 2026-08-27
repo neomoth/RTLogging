@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/IoCManager/">
+    <Project Path="IoCManager/IoCManager/IoCManager.csproj" />
+  </Folder>
+  <Project Path="LogManager/LogManager.csproj" />
+</Solution>
