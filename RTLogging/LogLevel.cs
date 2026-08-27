@@ -1,6 +1,6 @@
 using Serilog.Events;
 
-namespace LogManager;
+namespace RTLogging;
 
 /// <remarks>
 ///	The value associated with the level determines the order in which messages are filtered.

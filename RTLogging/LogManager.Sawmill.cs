@@ -2,7 +2,7 @@ using Serilog;
 using Serilog.Core;
 using Serilog.Events;
 
-namespace LogManager;
+namespace RTLogging;
 
 public sealed partial class LogManager
 {

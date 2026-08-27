@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using Serilog.Events;
 
-namespace LogManager;
+namespace RTLogging;
 
 public static class LogExt
 {

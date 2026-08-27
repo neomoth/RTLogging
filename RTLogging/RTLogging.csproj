@@ -6,6 +6,7 @@
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<Nullable>enable</Nullable>
 		<NoWarn>CA1416</NoWarn>
+		<RootNamespace>LogManager</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -18,5 +19,6 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\IoCManager\IoCManager\IoCManager.csproj" />
+	  <ProjectReference Include="..\IoC\IoC\IoC.csproj" />
 	</ItemGroup>
 </Project>

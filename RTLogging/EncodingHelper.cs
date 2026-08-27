@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace LogManager;
+namespace RTLogging;
 
 public static class EncodingHelper
 {

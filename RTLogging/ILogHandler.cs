@@ -1,6 +1,6 @@
 using Serilog.Events;
 
-namespace LogManager;
+namespace RTLogging;
 
 /// <summary>
 /// Format and print a message to an output source.

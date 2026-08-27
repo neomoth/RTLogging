@@ -6,7 +6,7 @@ using Serilog.Events;
 using TerraFX.Interop.Windows;
 using Timer = System.Timers.Timer;
 
-namespace LogManager;
+namespace RTLogging;
 
 public sealed class ConsoleLogHandler : ILogHandler, IDisposable
 {

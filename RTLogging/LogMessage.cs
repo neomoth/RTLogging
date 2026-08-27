@@ -1,4 +1,4 @@
-namespace LogManager;
+namespace RTLogging;
 
 public static class LogMessage
 {

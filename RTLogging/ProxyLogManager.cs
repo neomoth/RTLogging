@@ -1,4 +1,4 @@
-namespace LogManager;
+namespace RTLogging;
 
 public sealed class ProxyLogManager : ILogManager
 {

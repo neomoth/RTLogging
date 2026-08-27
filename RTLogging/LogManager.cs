@@ -1,6 +1,6 @@
-using IoCManager.Extensions;
+using IoC.Extensions;
 
-namespace LogManager;
+namespace RTLogging;
 
 public sealed partial class LogManager : ILogManager, IDisposable
 {

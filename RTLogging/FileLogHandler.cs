@@ -1,6 +1,6 @@
 using Serilog.Events;
 
-namespace LogManager;
+namespace RTLogging;
 
 public sealed class FileLogHandler : ILogHandler, IDisposable
 {
