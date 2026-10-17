@@ -13,7 +13,7 @@ public sealed class ConsoleLogHandler : ILogHandler, IDisposable
 	private static readonly bool WriteAnsiColors;
 	
 	// ReSharper disable UnusedMember.Local
-	private const string AnsiCsi = "\x1b[";
+	private const string AnsiCsi = "\e[";
 	private const string AnsiFgDefault = AnsiCsi + "39m";
 	private const string AnsiFgBlack = AnsiCsi + "30m";
 	private const string AnsiFgRed = AnsiCsi + "31m";

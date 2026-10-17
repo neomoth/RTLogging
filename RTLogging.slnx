@@ -1,6 +1,3 @@
 <Solution>
-  <Folder Name="/IoC/">
-    <Project Path="IoC/IoC/IoC.csproj" />
-  </Folder>
   <Project Path="RTLogging\RTLogging.csproj" />
 </Solution>

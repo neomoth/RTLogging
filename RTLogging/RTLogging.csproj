@@ -1,16 +1,34 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<Nullable>enable</Nullable>
-		<NoWarn>CA1416</NoWarn>
-		<RootNamespace>LogManager</RootNamespace>
+		<RootNamespace>RTLogging</RootNamespace>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);CA1416;CS1591</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>Neomoth.RTLogging</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>neomoth</Authors>
+		<Description>Hierarchical, named "sawmill" loggers built on Serilog, with console and file handlers.</Description>
+		<PackageTags>logging;serilog;logger;sawmill</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageProjectUrl>https://github.com/neomoth/LogManager</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/neomoth/LogManager</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="JetBrains.Annotations" Version="2025.2.4" PrivateAssets="all"/>
+		<PackageReference Include="Neomoth.IoC" Version="1.0.0" />
 		<PackageReference Include="Serilog" Version="4.3.1" />
 		<PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
 		<PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
@@ -18,7 +36,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\IoCManager\IoCManager\IoCManager.csproj" />
-	  <ProjectReference Include="..\IoC\IoC\IoC.csproj" />
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 </Project>
