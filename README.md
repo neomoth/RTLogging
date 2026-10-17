@@ -16,9 +16,9 @@ using var logManager = new LogManager();
 logManager.RootSawmill.AddHandler(new ConsoleLogHandler());
 logManager.RootSawmill.AddHandler(new FileLogHandler("logs/app.log"));
 
-var sawmill = logManager.GetSawmill("game.net");
+var sawmill = logManager.GetSawmill("app.net");
 sawmill.Info("Connected to {0}", "127.0.0.1");
 sawmill.Debug("only shown if the level allows it");
 ```
 
-Sawmills are parented by name: messages logged to `game.net` also reach the handlers on `game` and the root sawmill, and a sawmill with no `Level` set uses its parent's.
+Sawmills are parented by name: messages logged to `app.net` also reach the handlers on `app` and the root sawmill, and a sawmill with no `Level` set uses its parent's.
